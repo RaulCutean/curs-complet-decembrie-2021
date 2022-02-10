@@ -1,0 +1,265 @@
+/* START RESET */
+
+html {
+  font-size: 10px; /* stabilim dimensiunea de 1rem */
+}
+
+body {
+  font-family: sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+textarea,
+input:focus,
+textarea:focus {
+  border: unset;
+  outline: unset;
+  box-shadow: unset;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* END RESET */
+
+.btn-1 {
+  display: inline-block;
+  margin: 50px;
+  border: 1px solid black;
+  color: black;
+  padding: 10px 35px;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  border-radius: 5px;
+  transition: all 600ms;
+  transition-delay: 1s;
+}
+
+.btn-1:hover {
+  /* cursorul sa fie  deasupra de element */
+  background-color: black;
+  color: #ffffff;
+  border-radius: 20px;
+}
+
+.btn-1:active {
+  /* 
+    cursorul trebuie sa fie pe element
+    butonul de click trebuie sa fie apasat
+  */
+  background-color: red;
+}
+
+.btn-1:visited {
+  /* 
+    url-ul spre care trimite href a fost vizitat
+    NOTA: folositi doar cand e absolut necesar
+  */
+  /* background-color: magenta; */
+}
+
+.input-1 {
+  display: block;
+  width: 100%;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  background-color: #ffffff;
+  border: 2px solid #eaeaea;
+  padding: 7px 10px;
+  border-radius: 5px;
+}
+
+.input-1:hover {
+  border: 2px solid #b0b0b0;
+}
+
+.input-1:focus {
+  border: 2px solid lightblue;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.6em;
+}
+
+/* p:nth-child(odd) {
+  background-color: #eaeaea;
+}
+
+p:nth-child(even) {
+  background-color: darkcyan;
+} */
+
+article {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto 2rem;
+  background-color: #fafafa;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+article p:first-of-type {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+article p:last-of-type {
+  font-size: 1.4rem;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.transition-1 {
+  width: 100px;
+  height: 100px;
+  background-color: crimson;
+  border-radius: 50px;
+  transition: all 2s cubic-bezier(0.1, 0.7, 0.9, 0.01);
+}
+
+.transition-1:hover {
+  width: 100%;
+}
+
+.transform-1 {
+  width: 100px;
+  height: 100px;
+  background-color: darkmagenta;
+  transition: transform 0.6s;
+}
+
+.transform-1:hover {
+  transform: rotate(3600deg);
+}
+
+.transform-2 {
+  width: 100px;
+  height: 100px;
+  background-color: brown;
+  transition: all 3s;
+}
+
+.transform-2:hover {
+  transform: scale(2) rotate(45deg);
+}
+
+.scene {
+  height: 100vh;
+  /* 1vh = 1% din Viewport Height */
+  border: 3px dotted black;
+  width: 100vw;
+  /* 1vw = 1% din Viewport Width */
+  position: relative;
+}
+
+@keyframes ball {
+  0% {
+    left: 0;
+  }
+  10% {
+    left: 10%;
+    bottom: 10vh;
+  }
+  20% {
+    left: 20%;
+    bottom: 0;
+  }
+  30% {
+    left: 30%;
+    bottom: 8vh;
+  }
+  40% {
+    left: 40%;
+    bottom: 0;
+  }
+  50% {
+    left: 50%;
+    bottom: 7vh;
+  }
+  60% {
+    left: 60%;
+    bottom: 0;
+  }
+  70% {
+    left: 70%;
+    bottom: 5vh;
+  }
+  80% {
+    left: 80%;
+    bottom: 0;
+  }
+  90% {
+    left: 90%;
+    bottom: 1vh;
+  }
+  95% {
+    left: 95%;
+    bottom: 0;
+  }
+  100% {
+    left: 100%;
+    bottom: 0;
+  }
+}
+
+.animated {
+  width: 5vh;
+  height: 5vh;
+  background-color: red;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 50%;
+  animation: ball 2s infinite ease-in-out;
+}
+
+@keyframes detoate {
+  0% {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+  33% {
+    transform: scale(2) translate(-50%, -50%) rotate(90deg);
+    opacity: 0.5;
+  }
+  66% {
+    transform: translate(200px, -50%) scale(2) rotate(90deg);
+    opacity: 0.3;
+  }
+  100% {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+
+.animated-2 {
+  width: 10vw;
+  height: 10vw;
+  background-color: purple;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: detoate 10s infinite;
+}
+
+p {
+  clip-path: polygon(0 42%, 100% 0, 100% 57%, 0% 100%);
+}

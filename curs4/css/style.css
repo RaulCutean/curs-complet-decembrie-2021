@@ -1,0 +1,171 @@
+/* START RESET */
+
+body {
+  -webkit-print-color-adjust: exact !important;
+}
+
+html {
+  font-size: 16px; /* stabilim dimensiunea de 1rem */
+}
+
+body {
+  font-family: sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* END RESET */
+
+.container {
+  max-width: 960px;
+  width: 98%;
+  margin: auto;
+  padding: 0 1.5rem;
+}
+
+.row {
+  margin: 0 -1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* .col {
+  flex: 1;
+  padding: 0 1.5rem;
+  border: 1px dotted red;
+} */
+
+div[class*="col"] {
+  padding: 0 1.5rem;
+  border: 1px dotted blue;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-4 {
+  width: 33.3333%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+/* 
+
+desktop >= 1025px
+tablet <= 1024px
+mobile <= 767px
+
+*/
+
+.container {
+  background-color: grey;
+}
+
+@media (max-width: 1024px) {
+  /* tablete */
+  .container {
+    background-color: magenta;
+  }
+  .col-t-6 {
+    width: 50%;
+  }
+  .col-t-4 {
+    width: 33.3333%;
+  }
+  .col-t-3 {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  /* mobile */
+  .container {
+    background-color: lightblue;
+  }
+  .col-m-12 {
+    width: 100%;
+  }
+  .col-m-6 {
+    width: 50%;
+  }
+  .col-m-4 {
+    width: 33.3333%;
+  }
+  .col-m-3 {
+    width: 25%;
+  }
+}
+
+@media (min-width: 1921px) {
+  /* 2k */
+  .container {
+    background-color: red;
+  }
+}
+
+@media (min-width: 3650px) {
+  /* 4k */
+  .container {
+    background-color: blue;
+  }
+}
+
+/* @media (max-width: 1024px) and (orientation: portrait) {
+  body {
+    background-color: red;
+  }
+}
+
+@media (max-width: 1024px) and (orientation: landscape) {
+  body {
+    background-color: black;
+  }
+} */
+
+/* @media (orientation: portrait) {
+  body {
+    background: red;
+  }
+}
+
+@media (orientation: landscape) {
+  body {
+    background: black;
+  }
+} */
+
+@media screen and (max-width: 1024px) {
+  .container {
+    background: green;
+  }
+}
+
+@media print {
+  .container {
+    background: black;
+  }
+}
+
+@media (min-device-pixel-ratio: 2) {
+  /* DOAR retina display */
+}

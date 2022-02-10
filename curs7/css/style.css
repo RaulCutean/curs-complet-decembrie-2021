@@ -1,0 +1,183 @@
+/* START RESET */
+
+html {
+  font-size: 10px; /* stabilim dimensiunea de 1rem */
+}
+
+body {
+  font-family: sans-serif;
+  /* background-image: url("https://source.unsplash.com/1920x1080");
+  background-position: center center;
+  background-attachment: fixed; */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* END RESET */
+
+.btn-1 {
+  display: inline-block;
+  font-size: 1.6rem;
+  line-height: 1.6em;
+  border: 2px solid transparent;
+  /* background-color: #258ea6; */
+  padding: 7px 3.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #549f93;
+  transition: all 0.3s;
+}
+
+.btn-1:hover {
+  border: 2px solid #549f93;
+  color: #549f93;
+  background-color: transparent;
+}
+
+.btn-1:active {
+  color: #e75a7c;
+  border: #e75a7c 2px solid;
+}
+
+.hvr-1 {
+  font-size: 1rem;
+  transition: all 0.6s;
+}
+
+.hvr-1:hover {
+  font-size: 1.6rem;
+}
+
+.btn-2 {
+  display: inline-block;
+  padding: 7px 3.5rem;
+  font-size: 1.6rem;
+  line-height: 1.6em;
+  color: #e75a7c;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.6s;
+}
+
+.btn-2::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #e75a7c;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: width 0.6s;
+}
+
+.btn-2:hover::before {
+  width: 100%;
+}
+
+.btn-2::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #e75a7c;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transition: width 0.6s;
+}
+
+.btn-2:hover::after {
+  width: 100%;
+}
+
+p::before {
+  content: "";
+  display: inline-block;
+  width: 0.75em;
+  height: 0.75em;
+  background-color: black;
+  border-radius: 50%;
+  margin-right: 1em;
+}
+
+@media print {
+  a::after {
+    content: attr(href);
+  }
+}
+
+.btn-3 {
+  display: inline-block;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  padding: 7px 3.5rem;
+  background-color: #000000;
+  color: #fafafa;
+  margin: 100px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-3::before {
+  content: "";
+  width: 300%;
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.3);
+  display: block;
+  position: absolute;
+  left: 0;
+  transform: rotate(45deg);
+}
+
+.btn-3:hover::before {
+  left: -300px;
+  transition: left 0.9s ease-in-out;
+}
+
+.btn-4 {
+  display: inline-block;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #2c363f;
+  padding: 1rem 3.5rem 1rem 3.5rem;
+  cursor: pointer;
+  transition: padding 0.6s;
+}
+
+.btn-4::after {
+  content: "\f061";
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-left: 0;
+  transition: all 0.5s;
+}
+
+.btn-4:hover {
+  padding: 1rem 2.5rem 1rem 3.5rem;
+}
+
+.btn-4:hover::after {
+  margin-left: 10px;
+}
+
+/* 
+Evitati transition pe combinatii
+margin / padding / border
+*/

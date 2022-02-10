@@ -1,0 +1,119 @@
+#p {
+  color: magenta;
+}
+
+/* START RESET */
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* END RESET */
+
+p {
+  color: blue;
+  color: aquamarine;
+}
+
+/*
+Prioritate CSS:
+
+inline > selector
+style="color: red;" >>>> p {color: blue;}
+*/
+
+p {
+  font-size: 22px;
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+
+/* cand avem class */
+.p {
+  text-decoration: underline;
+}
+
+.b {
+  font-weight: 700;
+}
+
+.i {
+  font-style: oblique;
+}
+
+.curs {
+  color: #000000;
+}
+
+p {
+  color: red;
+}
+
+/* 
+Prioritate
+
+INLINE > id > class > el
+
+*/
+
+p {
+  background-color: #9a9a9a;
+}
+
+/* 
+HEX color codes
+0-9-a-f
+
+#RRGGBB
+
+*/
+
+.card {
+  width: 180px;
+  padding: 15px;
+  background: #eaeaea;
+  margin: 50px auto;
+  text-align: center;
+  box-shadow: 0 5px 10px #525252;
+  border-radius: 5px;
+}
+
+.card img {
+  border-radius: 50px;
+  margin-bottom: 30px;
+}
+
+.card h3 {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 0;
+}
+
+.card p {
+  background-color: unset;
+  color: #525252;
+  font-size: 12px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.card ul {
+  display: flex; /* flexbox */
+  align-items: center; /* verticala */
+  justify-content: space-around; /* orizontala */
+}
