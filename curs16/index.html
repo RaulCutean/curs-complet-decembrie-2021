@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      "use strict";
+      /*
+      console.log(1);
+      console.log(2);
+      console.log(3);
+      console.log(curs);
+      console.log(4);
+      */
+
+      /*
+      ==================================
+      PRIMITIVE
+      ==================================
+      */
+
+      // comment pe o singura linie
+      console.log(1); // 1 = number
+      console.log("1"); // "1" = string
+      console.log("unu");
+      console.log(1, "1");
+      console.log(1, "1");
+      console.log(true); // true = boolean
+
+      console.log(1 == 2); // verifica egalitatea elementelor
+      console.log(1 === 2); // verifica egalitatea ca si tip de date + valoare
+
+      console.log("== ", 1 == "1");
+      console.log("== ", "1" == 1);
+
+      console.log("=== ", 1 === "1");
+      console.log("=== ", "1" === 1);
+
+      console.log("boolean ", 1 == true);
+      console.log("boolean ", 1 === true);
+
+      console.log(typeof "true");
+
+      console.log(typeof 1 === typeof "1");
+
+      console.log("number" === "string");
+
+      var unu = "curs javascript"; // am creat variabila unu si i-am atribuit o valoare
+      console.log(unu);
+      unu = "curs html / css"; // schimbam valoarea pe care o tine unu
+      console.log(unu);
+
+      // din 2015, in standardul EcmaScript 2015 / EcmaScript 5 / ES5
+      let nume = "Curs Web"; // putem schimba valoarea variabilei
+      const numarCursanti = 17; // este o constanta, adica valoarea nu va fi schimbatat ulterior
+
+      nume = "Curs JavaScript";
+      // numarCursanti = "23"; constantele nu pot fi schimbate
+
+      console.log(nume, numarCursanti);
+
+      /*
+        ==============================
+        non-primitive
+        ==============================
+      */
+
+      const cursanti = ["Bob", 23, true]; // acesta este un array
+      console.log("JavaScript vede: ", typeof cursanti, cursanti);
+      console.log(cursanti[0]); // la pozitia 0 avem "Bob"
+      console.log(cursanti[2]);
+
+      cursanti[3] = "Johnny";
+      console.log(cursanti[3]);
+
+      const someObject = {
+        firstName: "Alex",
+        lastName: "Zmed",
+        age: 18,
+        birthYear: 1990,
+      };
+
+      console.log(someObject.firstName);
+      console.log(someObject.age + someObject.birthYear);
+
+      console.log("JavaScript vede: ", typeof someObject, someObject);
+
+      const users = [
+        {
+          firstName: "Bob",
+          friends: ["Alice", "Eve"],
+        },
+        {
+          firstName: "Steve",
+          friends: ["Eve", "Bob"],
+        },
+      ];
+
+      console.log(users[0].firstName);
+      console.log(users[0].friends[0]); // Alice
+      console.log(users[0].friends[1]); // Eve
+      console.log(users[1].friends[0]); // Eve
+      console.log(users[1].friends[1]); // Bob
+
+      let number1 = 33;
+      let number2 = 33.33;
+      console.log(typeof number1, typeof number2); // number number
+    </script>
+  </body>
+</html>
