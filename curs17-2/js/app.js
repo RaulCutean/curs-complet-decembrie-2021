@@ -178,6 +178,9 @@ function checkAccountType(arg) {
 checkAccountType("sysadmin");
 
 function doCalculation(sign, n1, n2) {
+  if (sign !== "+" && sign !== "-") {
+    return "operation not supported";
+  }
   switch (sign) {
     case "+":
       return n1 + n2;
