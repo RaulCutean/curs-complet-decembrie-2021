@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Boilerplate</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1
+      onmouseenter="handleTitleHoverStart()"
+      onmouseleave="handleTitleHoverEnd()"
+    >
+      Hello world!
+    </h1>
+
+    <!-- <button id="btn1">Button 1</button>
+    <button id="btn2">Button 2</button>
+    <button id="btn3">Button 3</button>
+
+    <p class="para para1">Sunt un paragraf</p>
+    <p class="para para2">Sunt un paragraf</p>
+    <p class="para para3">Sunt un paragraf</p> -->
+
+    <!-- <article>
+      <div class="left">
+        <div class="icon">1</div>
+      </div>
+      <div class="right">
+        <h1>Titlu articol</h1>
+        <p>
+          Body articol Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Nulla quae quam libero commodi. Culpa doloribus neque quis quos ea
+          vel.
+        </p>
+      </div>
+    </article> -->
+
+    <span onclick="getAllPosts(posts)">Get all posts</span>
+
+    <div style="display: flex">
+      <div class="dropdown" onclick="handleDropdownToggle(this)">
+        <span>Dropdown</span>
+        <ul>
+          <li>List item 1</li>
+          <li>List item 2</li>
+          <li>List item 3</li>
+        </ul>
+      </div>
+
+      <div class="dropdown" onclick="handleDropdownToggle(this)">
+        <span>Dropdown 2</span>
+        <ul>
+          <li>List item 1</li>
+          <li>List item 2</li>
+        </ul>
+      </div>
+
+      <div class="dropdown" onclick="handleDropdownToggle(this)">
+        <span>Dropdown 3</span>
+        <ul>
+          <li>List item 1</li>
+          <li>List item 2</li>
+        </ul>
+      </div>
+
+      <div class="dropdown" onclick="handleDropdownToggle(this)">
+        <span>Dropdown 4</span>
+        <ul>
+          <li>List item 1</li>
+          <li>List item 2</li>
+        </ul>
+      </div>
+    </div>
+
+    <input
+      placeholder="Scrie ceva"
+      onchange="getInputValue(this)"
+      onkeyup="handleKeyUp(this)"
+      onkeydown="handleKeyDown(this)"
+      id="search"
+    />
+    <!-- onchange - apeleaza functia cand plecam din input -->
+    <div id="output"></div>
+
+    <div id="app"></div>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
