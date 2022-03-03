@@ -1,0 +1,57 @@
+/* START RESET */
+
+html {
+  font-size: 10px; /* stabilim dimensiunea de 1rem */
+}
+
+body {
+  font-family: sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+input:focus,
+textarea,
+textarea:focus {
+  border: unset;
+  outline: unset;
+  box-shadow: unset;
+}
+
+/* END RESET */
+
+.toast-alert {
+  position: fixed;
+  top: -10rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 32rem;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #ffffff;
+  background-color: #058e3f;
+  transition: top 0.6s ease-in-out;
+}
+
+.toast-alert.error {
+  background-color: #f8333c;
+}
+
+.toast-alert.show {
+  top: 1rem;
+}
