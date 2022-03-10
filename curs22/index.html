@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Boilerplate</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body class="registerPage">
+    <div class="toast" id="toast">Mesaj generic.</div>
+
+    <div class="register-form">
+      <h2>Inregistreaza cont</h2>
+      <input
+        onkeyup="clearErrors()"
+        type="text"
+        placeholder="Prenume"
+        class="input"
+        id="firstName"
+      />
+      <input
+        onkeyup="clearErrors()"
+        type="text"
+        placeholder="Nume"
+        class="input"
+        id="lastName"
+      />
+      <input
+        onkeyup="clearErrors()"
+        type="email"
+        placeholder="Adresa email"
+        class="input"
+        id="email"
+      />
+      <input
+        onkeyup="clearErrors()"
+        type="password"
+        placeholder="Parola"
+        class="input"
+        id="password1"
+      />
+      <input
+        onkeyup="clearErrors()"
+        type="password"
+        placeholder="Confirmare parola"
+        class="input"
+        id="password2"
+      />
+      <label>
+        <input type="checkbox" id="terms" />
+        Sunt de acord cu termenii si conditiile
+      </label>
+      <button type="button" class="btn" id="registerSubmit">Creaza cont</button>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
