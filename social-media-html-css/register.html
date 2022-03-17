@@ -8,11 +8,20 @@
 
     <link href="css/font-awesome.min.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
+    <script>
+      const token = localStorage.token;
+
+      if (token) {
+        window.location.href = "newsfeed.html";
+      }
+    </script>
   </head>
   <body class="login-register-page">
+    <div class="toast" id="toast"></div>
+
     <div class="form-wrapper">
       <h1 class="mb-lg">Register a new account.</h1>
-      <form action="newsfeed.html" method="post">
+      <form>
         <label for="fname">First name</label>
         <input
           type="text"
@@ -31,15 +40,7 @@
           placeholder="Type here"
           class="mb-md"
         />
-        <label for="bdate">Birth date</label>
-        <input
-          type="date"
-          id="bdate"
-          name="bdate"
-          required
-          placeholder="dd/mm/yyyy"
-          class="mb-md"
-        />
+
         <label for="email">E-mail address</label>
         <input
           type="email"
@@ -74,8 +75,17 @@
 
         <a href="index.html" class="link mb-md">Log in instead.</a>
 
-        <input type="submit" value="Create account" class="btn btn-primary" />
+        <input
+          id="registerBtn"
+          type="button"
+          value="Create account"
+          class="btn btn-primary"
+        />
       </form>
     </div>
+
+    <script src="js/consts.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/register.js"></script>
   </body>
 </html>

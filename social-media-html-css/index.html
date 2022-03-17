@@ -8,19 +8,15 @@
 
     <link href="css/font-awesome.min.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
+    <script>
+      const token = localStorage.token;
+
+      if (token) {
+        window.location.href = "newsfeed.html";
+      }
+    </script>
   </head>
   <body class="login-register-page">
-    <!-- <h1>H1 title here</h1>
-    <h3>H3 title here</h3>
-    <h4>h4 title here</h4>
-    <p>paragraph here</p>
-    <p class="light">light paragraph here</p>
-    <input type="text" placeholder="Placeholder" />
-    <input type="number" placeholder="Placeholder" />
-    <input type="date" placeholder="Placeholder" />
-    <a href="#" class="btn btn-primary">Login</a>
-    <button class="btn">Register</button> -->
-
     <div class="form-wrapper">
       <h1 class="mb-lg">Welcome</h1>
       <form action="newsfeed.html" method="post">

@@ -8,6 +8,13 @@
 
     <link href="css/font-awesome.min.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
+    <script>
+      const token = localStorage.token;
+
+      if (!token) {
+        window.location.href = "index.html";
+      }
+    </script>
   </head>
   <body>
     <div class="page-wrapper">
