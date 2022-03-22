@@ -10,6 +10,7 @@
     <link href="css/style.css" rel="stylesheet" />
     <script>
       const token = localStorage.token;
+      const expires = localStorage.expires;
 
       if (!token) {
         window.location.href = "index.html";
@@ -86,8 +87,8 @@
               </a>
             </li>
             <li>
-              <a href="#">
-                <i class="fa fa-caret-down"></i>
+              <a href="#" id="signOut">
+                <i class="fa fa-sign-out"></i>
               </a>
             </li>
           </ul>
@@ -494,6 +495,7 @@
           <!-- END POST -->
         </main>
         <aside class="right-content">
+          <div class="SPONS_MESSAGE" id="SPONS_MESSAGE"></div>
           <div class="sticky-content">
             <ul>
               <li class="active">
@@ -613,5 +615,15 @@
         </li>
       </ul>
     </div>
+
+    <script src="js/consts.js"></script>
+    <script src="js/utils.js"></script>
+    <script>
+      if (currentTime > expires) {
+        localStorage.clear();
+        window.location.href = "index.html";
+      }
+    </script>
+    <script src="js/newsfeed.js"></script>
   </body>
 </html>

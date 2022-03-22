@@ -17,9 +17,11 @@
     </script>
   </head>
   <body class="login-register-page">
+    <div class="toast" id="toast"></div>
+
     <div class="form-wrapper">
       <h1 class="mb-lg">Welcome</h1>
-      <form action="newsfeed.html" method="post">
+      <form>
         <label for="email">E-mail address</label>
         <input
           type="email"
@@ -45,8 +47,17 @@
 
         <a href="register.html" class="link mb-md">Create account</a>
 
-        <input type="submit" value="Log in" class="btn btn-primary" />
+        <input
+          type="button"
+          id="loginBtn"
+          value="Log in"
+          class="btn btn-primary"
+        />
       </form>
     </div>
+
+    <script src="js/consts.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/login.js"></script>
   </body>
 </html>

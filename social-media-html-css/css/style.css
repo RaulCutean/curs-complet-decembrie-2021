@@ -306,10 +306,33 @@ header .fa-search {
 }
 
 .sticky-content {
-  height: calc(100vh - 5rem);
+  height: calc(100vh - 25rem);
   position: sticky;
   top: 5rem;
   background-color: #ffffff;
+}
+
+.SPONS_MESSAGE {
+  height: 20rem;
+  position: relative;
+}
+
+.SPONS_MESSAGE a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+aside.right-content .SPONS_MESSAGE a img {
+  position: absolute;
+  width: 100%;
+  border-radius: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .page-nav {
