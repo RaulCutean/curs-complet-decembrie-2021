@@ -1,0 +1,14 @@
+input,
+textarea {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  padding: 5px 1rem;
+  border: unset;
+  box-shadow: unset;
+  outline: none;
+  &:focus {
+    border: unset;
+    box-shadow: unset;
+    outline: none;
+  }
+}

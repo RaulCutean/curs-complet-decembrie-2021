@@ -1,0 +1,23 @@
+/* BUTTONS */
+.btn {
+  display: inline-block;
+  min-width: 16rem;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  padding: 0.8rem 1.6rem;
+  text-align: center;
+  @include border-radius(5px);
+
+  &.btn-primary {
+    background-color: $color-success;
+    color: $color-white;
+  }
+  &.btn-danger {
+    background-color: $color-danger;
+    color: $color-white;
+  }
+  &.btn-secondary {
+    background-color: transparent;
+    color: black;
+  }
+}

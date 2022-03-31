@@ -1,0 +1,28 @@
+/* Start reset */
+
+// set value for 1rem
+html {
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+body {
+  font-family: sans-serif;
+}
+
+ul,
+ol {
+  list-style: none;
+}

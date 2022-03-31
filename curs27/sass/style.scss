@@ -1,0 +1,16 @@
+/* voi aparea in css */
+// eu nu apar in css
+
+// prima data importam variables altfel nu avem acces mai jos la ele
+@import "variables";
+// mixins nu veti avea nevoie de ele decat in situatii speciale
+@import "mixins";
+
+// putem fragmenta CSS cat de mult vrem
+@import "reset";
+@import "input";
+
+// putem componentiza CSS-ul
+@import "components/typography";
+@import "components/card";
+@import "components/buttons";
