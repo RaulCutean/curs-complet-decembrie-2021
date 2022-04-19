@@ -1,7 +1,13 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import { HomePage, ServiciiPage, ContactPage, ServiciuPage } from "./pages";
+import {
+  HomePage,
+  ServiciiPage,
+  ContactPage,
+  ServiciuPage,
+  LoginPage,
+} from "./pages";
 
 const routes = [
   {
@@ -13,12 +19,16 @@ const routes = [
     component: <ServiciiPage />,
   },
   {
-    path: "/servicii/:name",
+    path: "/servicii/:id",
     component: <ServiciuPage />,
   },
   {
     path: "/contact",
     component: <ContactPage />,
+  },
+  {
+    path: "/login",
+    component: <LoginPage />,
   },
 ];
 

@@ -29,3 +29,5 @@ export const useGetAllUsers = () => {
 
   return { fetching, users, error };
 };
+
+// {error, users, fetching}

@@ -50,3 +50,29 @@ export const Link = styled(DefaultLink)`
     }
   }
 `;
+
+export const Logout = styled.span`
+  color: #ffffff;
+  display: block;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  padding: 8px 1.6rem;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 2px;
+    transform: translateX(-50%);
+    width: 0;
+    background-color: #fafafa;
+    transition: width 0.3s ease-out;
+  }
+  &:hover {
+    &::after {
+      width: 100%;
+    }
+  }
+`;
