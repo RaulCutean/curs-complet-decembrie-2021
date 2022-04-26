@@ -1,0 +1,13 @@
+.Hero_Container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 1.5rem;
+  flex-direction: column;
+  background-color: #eaeaea;
+}
+
+.Hero_Title {
+  font-size: 6.4rem;
+  line-height: 1.05;
+}
