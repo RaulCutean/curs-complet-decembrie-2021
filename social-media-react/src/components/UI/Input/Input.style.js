@@ -16,7 +16,6 @@ const baseStyle = css`
   padding: 0.7rem 1.6rem;
   border-radius: 2rem;
   border: 1px solid ${colors.text.secondary};
-  background-color: ${colors.text.secondary};
   margin: 5px 0;
   transition: border 0.3s;
 
