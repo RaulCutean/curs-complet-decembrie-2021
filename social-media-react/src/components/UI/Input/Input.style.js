@@ -1,10 +1,31 @@
 import styled, { css } from "styled-components";
 import { colors } from "../../../consts";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const Container = styled.div`
   display: block;
   width: 100%;
-  margin-bottom: 1rem;
+  position: relative;
+
+  ${({ noMargin }) =>
+    noMargin
+      ? ""
+      : css`
+          margin-bottom: 1rem;
+        `}
+`;
+
+export const SearchIcon = styled(FontAwesomeIcon)`
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  display: block;
+  width: 2.4rem;
+  height: 2.4rem;
+  position: absolute;
+  top: 50%;
+  left: 0.8rem;
+  transform: translateY(-50%);
+  color: ${colors.text.secondary};
 `;
 
 const baseStyle = css`
@@ -26,6 +47,9 @@ const baseStyle = css`
 
 export const InputElement = styled.input`
   ${baseStyle}
+  &[type="search"] {
+    padding-left: 4rem;
+  }
 `;
 
 export const Textarea = styled.textarea`

@@ -1,10 +1,18 @@
 import React from "react";
-import { ProtectedLayout } from "../components";
+import {
+  ProtectedLayout,
+  PageWrapper,
+  Sidebar,
+  PostsWrapper,
+} from "../components";
 
 export function NewsfeedPage() {
   return (
     <ProtectedLayout>
-      <h1>NewsfeedPage</h1>
+      <PageWrapper>
+        <Sidebar>sidebar left</Sidebar>
+        <PostsWrapper>posts list</PostsWrapper>
+      </PageWrapper>
     </ProtectedLayout>
   );
 }
