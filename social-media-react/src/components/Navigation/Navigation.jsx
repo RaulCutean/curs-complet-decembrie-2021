@@ -1,11 +1,24 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffee } from "@fortawesome/free-solid-svg-icons";
-import { Header, Left, Middle, Right, Logo } from "./Navigation.style";
-import { Link } from "react-router-dom";
+import { faCoffee, faSignOut } from "@fortawesome/free-solid-svg-icons";
+import {
+  Header,
+  Left,
+  Middle,
+  Right,
+  Logo,
+  Link,
+  MiddleIcon,
+  ProfileLink,
+  LeftIcon,
+} from "./Navigation.style";
 import { Input } from "../";
 
-export function Navigation() {
+export function Navigation({ searchValue, handleSearch }) {
+  function handleSignOut() {
+    localStorage.clear();
+    window.location.reload();
+  }
+
   return (
     <Header>
       <Left>
@@ -15,51 +28,49 @@ export function Navigation() {
         <Input
           type="search"
           placeholder="Search"
-          value=""
-          onChange={() => console.log}
+          value={searchValue}
+          onChange={(e) => handleSearch(e.target.value)}
         />
       </Left>
       <Middle>
         <Link to="/">
-          <FontAwesomeIcon icon={faCoffee} />
+          <MiddleIcon icon={faCoffee} />
         </Link>
         <Link to="/">
-          <FontAwesomeIcon icon={faCoffee} />
+          <MiddleIcon icon={faCoffee} />
         </Link>
         <Link to="/">
-          <FontAwesomeIcon icon={faCoffee} />
+          <MiddleIcon icon={faCoffee} />
         </Link>
         <Link to="/">
-          <FontAwesomeIcon icon={faCoffee} />
+          <MiddleIcon icon={faCoffee} />
         </Link>
         <Link to="/">
-          <FontAwesomeIcon icon={faCoffee} />
+          <MiddleIcon icon={faCoffee} />
         </Link>
       </Middle>
       <Right>
-        <Link to="/">
-          <img src="https://source.unsplash.com/40x40" />
-        </Link>
+        <ProfileLink to="/">
+          <img src="https://source.unsplash.com/40x40" alt="nume prenume" />
+        </ProfileLink>
         <ul>
           <li>
             <Link to="/">
-              <FontAwesomeIcon icon={faCoffee} />
+              <LeftIcon icon={faCoffee} />
             </Link>
           </li>
           <li>
             <Link to="/">
-              <FontAwesomeIcon icon={faCoffee} />
+              <LeftIcon icon={faCoffee} />
             </Link>
           </li>
           <li>
             <Link to="/">
-              <FontAwesomeIcon icon={faCoffee} />
+              <LeftIcon icon={faCoffee} />
             </Link>
           </li>
           <li>
-            <Link to="/">
-              <FontAwesomeIcon icon={faCoffee} />
-            </Link>
+            <LeftIcon icon={faSignOut} onClick={handleSignOut} />
           </li>
         </ul>
       </Right>
