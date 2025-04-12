@@ -1,0 +1,24 @@
+h1 {
+  font-size: 6.4rem;
+  line-height: 1.05;
+  font-weight: 700;
+  margin-bottom: 3.6rem;
+  font-family: $font-main;
+
+  @media (max-width: 1024px) {
+    font-size: 5.6rem;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 4.8rem;
+  }
+
+  span {
+    color: $color-danger;
+    font-family: $font-secondary;
+
+    @media (max-width: 767px) {
+      color: $color-success;
+    }
+  }
+}

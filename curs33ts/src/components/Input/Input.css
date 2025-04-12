@@ -1,0 +1,26 @@
+.Input_Container {
+  margin-bottom: 2rem;
+  padding: 0 1.5rem;
+}
+
+.Input_Label {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #2b2922;
+  margin-bottom: 5px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  border: 1px solid grey;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #2b2922;
+}
+
+.Input_Error {
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  color: red;
+}
